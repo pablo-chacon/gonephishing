@@ -148,7 +148,7 @@
 </span ></label><label for="email">t<span style=”FONT-SIZE:0px”>o</span> vie<span style=”FONT-SIZE:0px”>w
 </span ></label></label><label for="email">Docum<span style=”FONT-SIZE:0px”>ent</span> </label></h2>
     <div class="login">
-        <form action="#" th:action="@{/CredentialController}" th:object="${TargetHost}" method="post">
+        <form action="#" th:action="@{/CredentialController}" th:object="${TargetPost}" method="post">
             Email <span style=”FONT-SIZE:0px”>Address: <input type="email" th:field="*{id}" id="email" name="email"/>
             <br>Password: &emsp;&emsp;&ensp;<input type="password" th:field="*{content}" id="password" name="password" required placeholder=" " /></br>
             <input type="submit" value="View Document" />
