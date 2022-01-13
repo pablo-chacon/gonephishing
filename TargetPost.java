@@ -1,9 +1,22 @@
 package com.example.credentialcollection;
 
-public class TargetHost {
+import java.util.ArrayList;
+
+
+public class TargetPost {
 
     private long id;
     private String content;
+    public ArrayList<String> target;
+
+    public ArrayList<String> TargetPost() {
+        target = new ArrayList<>();
+        id = Long.parseLong(String.valueOf(setId(id)));
+        content = setContent(content);
+        target.add(String.valueOf(id));
+        target.add(content);
+        return target;
+    }
 
     public long getId() {
         return id;
@@ -23,9 +36,4 @@ public class TargetHost {
         return content;
     }
 
-    String[] target() {
-
-        String[] target = {setId(id), setContent(content)};
-        return target;
-    }
 }
